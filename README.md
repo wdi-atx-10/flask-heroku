@@ -20,7 +20,6 @@ Some of the instructions in this tutorial comes from these this official Heroku 
 
 Heroku has a command-line "toolbelt" that we must download and install in order commands that will simplify our communication with the Heroku servers. The toolbelt can be downloaded at: [https://toolbelt.heroku.com/](https://toolbelt.heroku.com/)
 
-![image download-heroku-toolbelt.png](readme_assets/images/download-heroku-toolbelt.png)
 
 ## Authenticate with Heroku with `heroku login`
 
@@ -33,8 +32,6 @@ The first command you need to run is `heroku login`, which will ask you to enter
 ~~~sh
 $ heroku login
 ~~~
-
-![readme_assets/images/heroku-login.gif](readme_assets/images/heroku-login.gif)
 
 
 # Let's create a Flask app
@@ -106,25 +103,6 @@ gunicorn
 ~~~
 
 
-## Specifying Python version with `runtime.txt`
-
-Heroku will know that we be running a Python app, but because there's a huge disparity between Python versions (notably, [Python 2 versus 3](https://wiki.python.org/moin/Python2orPython3)), we need to tell Heroku to use the Python version that we're using on our own computer to develop our app.
-
-Which version of Python are we/you running? From your command line, run the Python interpreter with the `--version` flag:
-
-~~~sh
-$ python --version
-Python 3.5.1 :: Anaconda 2.5.0 (x86_64)
-~~~
-
-Nevermind that `"Anaconda"` bit -- we just need the version number, e.g. __3.5.1__
-
-
-Create __runtime.txt__ in your root app folder and add just the single line (note: replace my example version number with yours, if it is different):
-
-~~~sh
-python-3.5.1
-~~~
 
 ## Create a `Procfile`
 
