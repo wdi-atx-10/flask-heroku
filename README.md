@@ -206,15 +206,12 @@ That output tells us two things:
 
 If you visit your application's app, e.g. `https://some-funnyword-9999.herokuapp.com/`. you'll get a placeholder page:
 
-![image welcome-heroku.png](readme_assets/images/welcome-heroku.png)
 
 That's not what we programmed our app to do -- so that's just a page that comes from Heroku -- we haven't really deployed our app yet. But Heroku is ready for us. You can further confirm this by visiting [https://dashboard.heroku.com/](https://dashboard.heroku.com/) and seeing your application's URL at the bottom:
 
-![image heroku-dashboard.png](/readme_assets/images/heroku-dashboard.png)
 
 Clicking on that application entry will reveal a page that is empty of "processes":
 
-![image heroku-dashboard-initial-app.png](readme_assets/images/heroku-dashboard-initial-app.png)
 
 
 As for that Git repo that Heroku created for us...run this command to see the endpoints:
@@ -261,7 +258,6 @@ And with that simple command, Heroku will go through the steps of taking our app
 After about 30 seconds, you'll get output telling you how to find your application on the web:
 
 
-![readme_assets/images/heroku-git-push.gif](readme_assets/images/heroku-git-push.gif)
 
 ~~~sh
 remote:        https://warm-scrubland-16039.herokuapp.com/ deployed to Heroku
